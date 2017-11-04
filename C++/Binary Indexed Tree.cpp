@@ -1,5 +1,3 @@
-#include "stdafx.h"
-
 const int capacity = 10;
 
 //A binary indexed tree implementation with sum and update operations in O(log(n))
