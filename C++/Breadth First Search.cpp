@@ -14,7 +14,8 @@ int BFS(int source, int sink)
     int depth = 0;
     int count = 1; //tracks the number of nodes on each traversal level
 
-    while (Q.size() > 0) {
+    while (Q.size() > 0)
+    {
         count--;
         int vertex = Q.front();
         Q.pop();
@@ -22,14 +23,17 @@ int BFS(int source, int sink)
         if (vertex == sink)
             return depth;
 
-        for (int neighbour : adjList[vertex]) {
-            if (!visited[neighbour]) {
+        for (int neighbour : adjList[vertex])
+        {
+            if (!visited[neighbour]) 
+            {
                 visited[neighbour] = true;
                 Q.push(neighbour);
             }
         }
 
-        if (count == 0) {
+        if (count == 0)
+        {
             count = Q.size();
             depth++;
         }
