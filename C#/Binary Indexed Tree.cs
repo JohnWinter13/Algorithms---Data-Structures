@@ -47,3 +47,4 @@ public class BinaryIndexedTree
         return index + (index & -index);
     }
 }
+

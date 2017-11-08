@@ -48,3 +48,4 @@ int main()
     std::cout << intervalSum(tree, 1, 9) << "\n";
     return 0;
 }
+
