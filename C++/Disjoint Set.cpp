@@ -10,10 +10,9 @@ void init()
 
 int root(int i)
 {
-    if (id[i] != i)
-        return root(id[i]);
-
-    return i;
+	if (i != id[i])
+		id[i] = root(id[i]);
+	return id[i];
 }
 
 void unite(int i, int j)
