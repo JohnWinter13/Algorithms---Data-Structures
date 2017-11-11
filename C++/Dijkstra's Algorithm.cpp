@@ -24,7 +24,7 @@ int* dijkstra(int source)
             int tempCost = dist[vertex] + neighbour.second;
             if (tempCost < dist[neighbour.first])
 	    {
-                pq.push(neighbour);
+                pq.push(std::make_pair(neighbour.first, tempCost));
                 dist[neighbour.first] = tempCost;
             }
         }
