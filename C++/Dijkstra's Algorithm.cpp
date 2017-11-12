@@ -17,8 +17,11 @@ int* dijkstra(int source)
 
     while (pq.size() > 0) 
     {
-        int vertex = pq.top().first;
+        int vertex = pq.top().first, vDist = pq.top().second;
         pq.pop();
+	if (vDist > dist[vertex])
+	    continue;
+	    
         for (pii neighbour : adjList[vertex])
 	{
             int tempCost = dist[vertex] + neighbour.second;
