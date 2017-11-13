@@ -9,6 +9,7 @@ public class WeightedGraph<T>
     public void AddVertex(T Vertex)
     {
         AdjacencyList[Vertex] = new HashSet<Tuple<T, int>>();
+        VertexCount++;
     }
 
     public void AddDirectedEdge(T A, T B, int W)
