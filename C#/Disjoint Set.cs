@@ -1,8 +1,8 @@
-    class Disjoint_Set
+    class DisjointSet
     {
         public readonly int[] DS;
 
-        public Disjoint_Set(int capacity)
+        public DisjointSet(int capacity)
         {
             DS = new int[capacity];
             for (int i = 0; i < capacity; i++)
