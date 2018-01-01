@@ -1,6 +1,5 @@
-# Algorithms---Data-Structures
-Implementations of common algorithms and data structures in C# / C++
+# Competitve Programming Library
 
-This repository was intended as a way for me to practice using C++ to implement common algorithms/data structures found in contest programming.
+This repostitory includes implementations of common algorithms and data structures found in contest programming in C# / C++
 
-I also found that it was uncommon to find many C# implementations so I decided to share those as well.
+I am also starting to include some of my solutions to problems found on online judges.
